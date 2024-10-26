@@ -1,0 +1,46 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h2>Login to Your Account</h2>
+
+            <!-- Messages section removed, since this is for Django -->
+
+            <form class="login-form" method="post" action="login_process.php">
+                <!-- Assuming you will handle the form submission in 'login_process.php' -->
+                
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                    <!-- Placeholder for validation error (if needed) -->
+                    <div class="error" style="display: none;">Error message here</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                    <!-- Placeholder for validation error (if needed) -->
+                    <div class="error" style="display: none;">Error message here</div>
+                </div>
+                
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+        </div>
+        <div class="signup-section">
+            <h2>New Here?</h2>
+            <a href="signup.html"><button class="sign-up-btn">Sign Up</button></a>
+        </div>
+    </div>
+</body>
+</html>
