@@ -33,13 +33,13 @@
 
     <div class="main-container">
         <aside class="sidebar">
-            <a href="./doctor-real.html" class="sidebar-link active">
+            <a href="./doctor-real.html" class="sidebar-link ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
                     <path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"/>
                 </svg>
                 Dashboard
             </a>
-            <a href="./doctor-appointments.html" class="sidebar-link ">
+            <a href="./doctor-appointments.html" class="sidebar-link active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
                     <path
                           d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
@@ -71,85 +71,52 @@
         <div class="layout-container">
             <div class="main-content">
                 <div class="dashboard-content">
+                    <h1 class="dashboard-title">Appointment Requests</h1>
                     
                     
-                    <h3 class="dashboard-greeting">Dr Arush biju</h3>
-                    
-                    <h3 class="section-title">Quick Actions</h3>
-                    <div class="quick-actions">
-                        <div class="action-buttons">
-                            <button class="btn-primary">View Appointments</button>
-                            <button class="btn-secondary">View Organ Requests</button>
-                        </div>
-                    </div>
     
-                </div>    
+                    
+                        
+                </div>
             </div>
-            <h3>Request Status</h3>
-            <div class="table-container">
-                
-                <table class="status-table">
-                    <thead>
-                        <tr>
-                            <th>Patient Name</th>
-                            <th>Request</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>Kidney Donation</td>
-                            <td class="accepted">Accepted</td>
-                        </tr>
-                        <tr>
-                            <td>Jane Smith</td>
-                            <td>Liver Donation</td>
-                            <td class="rejected">Rejected</td>
-                        </tr>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>Kidney Donation</td>
-                            <td class="accepted">Accepted</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            </div>
+            <main class="main-content">
         
-            <!-- Accepted Appointments Table -->
-            <h3>Accepted Appointments</h3>
-
-            <div class="table-container">
-                <table class="appointments-table">
-                    <thead>
-                        <tr>
-                            <th>Patient Name</th>
-                            <th>Appointment Date</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Emily Johnson</td>
-                            <td>2024-11-01</td>
-                            <td>
-                                <button class="btn cancel">Cancel</button>
-                                <button class="btn complete">Complete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Emily Johnson</td>
-                            <td>2024-11-01</td>
-                            <td>
-                                <button class="btn cancel">Cancel</button>
-                                <button class="btn complete">Complete</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Organ ID</th>
+                                <th>Organ</th>
+                                <th>Donor</th>
+                                <th>Location</th>
+                                
+                                <th>Request</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P001</td>
+                                <td>Heart</td>
+                                <td>Jane Smith</td>
+                                
+                                <td>LA</td>
+                                <td>
+                                    <div style="display: flex ; flex-direction: row; gap: 15px;"><button class="btn-secondary">Accept</button><button class="btn-primary">Decline</button></div></td>
+                            </tr>
+                            <tr>
+                                <td>P002</td>
+                                <td>Kidney</td>
+                                <td>John Doe</td>
+                                <td>KL</td>
+                                <td><button class="btn-secondary">Request</button></td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+               
+            </main> 
         </div>
         
     </div>
